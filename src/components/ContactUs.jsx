@@ -132,7 +132,7 @@ const ContactUs = () => {
             </button>
             <div>
               {error && error.map((e) => 
-              <div className={`text-md font-medium ${success ? "text-green-500": 'text-red-500'}`}>{e}</div>
+              <div key={null} className={`text-md font-medium ${success ? "text-green-500": 'text-red-500'}`}>{e}</div>
               )}
             </div>
           </form>
