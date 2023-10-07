@@ -3,9 +3,9 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/logoLight.png";
-import hamDark from "@/public/hamIcon.svg";
-import closeDark from "@/public/closeIcon.svg";
+import logo from "@/public/nav/logoLight.png";
+import hamDark from "@/public/nav/hamIcon.svg";
+import closeDark from "@/public/nav/closeIcon.svg";
 import { usePathname } from "next/navigation";
 
 const links = [
