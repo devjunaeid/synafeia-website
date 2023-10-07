@@ -2,26 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+ background-color: gray;
+ margin: 0;
+ padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+p{
+  @apply p-2 text-lg text-justify font-medium text-gray-900;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1{
+  @apply text-4xl font-extrabold text-orange-500 text-left;
+}
+
+.bor{
+  @apply border border-black;
+}
+
+.mainContainer{
+  @apply flex flex-col justify-between px-5 md:px-20 lg:px-40
+  bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-rose-100 to-teal-100;
+}
+
+.flex_col_mid{
+  @apply flex flex-col gap-2 justify-center items-center;
+}
+
+.flex_row_mid{
+  @apply flex justify-center items-center;
+}
+
+.flex_just_between{
+  @apply flex justify-between items-center;
+}
+
+.btn_link_border{
+  @apply font-medium text-xl md:text-2xl text-white bg-white/25 px-4 py-2 border border-white rounded-md transition-none duration-300 ease-in-out hover:transition-all hover:scale-110 hover:bg-white hover:text-black;
+}
+
+.btn_link_border_sm{
+  @apply font-medium text-xs md:text-xl text-white bg-white/25 px-3 py-1 border border-white rounded-md transition-none duration-300 ease-in-out hover:transition-all hover:scale-110 hover:bg-white hover:text-black;
+}
+
+
+.btn_link_borderBlk{
+  @apply font-medium text-2xl text-black bg-white/25 px-4 py-2 border border-black rounded-md transition-none duration-300 ease-in-out hover:transition-all hover:scale-110 hover:bg-white hover:text-black;
+}
+
+.btn_link_filled{
+  @apply font-medium text-lg md:text-2xl px-4 py-2 bg-orange-500 text-white border-0 rounded-md transition-none duration-300 ease-in-out hover:transition-all hover:scale-110 hover:bg-white hover:border-2 hover:border-orange-700 hover:text-black;
+}
+
+/* Ham menu */
+
+.hamContainer{
+  @apply fixed top-32 left-0 right-0 mx-auto z-30 bg-gray-950/80 backdrop-blur-lg text-white w-[90%] p-2 rounded-md md:hidden;
+}
+
+.hamItems{
+  @apply px-2 py-4 text-xl border-b rounded-sm flex_col_mid transition-none duration-300 ease-in-out hover:transition-all hover:scale-110 hover:border hover:bg-gray-800 hover:px-0 hover:rounded-md;
+}
+/* service */
+
+.lgv1{
+  @apply flex_col_mid md:flex-row md:justify-evenly items-center h-full md:m-20 py-24 md:gap-48;
+}
+
+.lgv2{
+  @apply flex_col_mid md:flex-row-reverse md:justify-evenly items-center h-full md:m-20 py-24 md:gap-48;
+}
+
+/* Bg */
+.iceBg{
+  @apply bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-rose-100 to-teal-100;
+}
+
+.orangeBg{
+  @apply bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-500 to-yellow-300;
+}
+
+/* Navber */
+
+.activeNav{
+  @apply bg-white text-black text-xl px-3 py-2 font-medium rounded-md;
+}
+.nonActiveNav{
+  @apply bg-transparent border border-white px-3 py-2 text-white text-xl font-medium rounded-md;
+}
+
+div#__next {
+  @apply h-full;
 }
