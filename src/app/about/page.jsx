@@ -54,7 +54,7 @@ const About = () => {
             we are more than a team; we are a collective of creative minds, tech
             enthusiasts, and strategic thinkers united by a singular passion: to
             redefine digital experiences. Founded on the principles of
-            innovation and integrity, we've set out on a mission to transform
+            innovation and integrity, we&apos;ve set out on a mission to transform
             the way businesses and individuals thrive in the digital realm.
           </p>
         </div>
