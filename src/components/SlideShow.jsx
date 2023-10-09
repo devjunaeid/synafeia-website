@@ -59,7 +59,7 @@ const SlideShow = () => {
 
   return (
     <div className="overflow-hidden relative w-[350px] md:w-full mb-20 mx-10">
-      <div className={`flex transition-transform ease-out duration-500"}`}style={{transform: `translateX(-${current * 100}%)`}}>
+      <div className={`flex transition-transform ease-out duration-700 delay-100"}`}style={{transform: `translateX(-${current * 100}%)`}}>
         {serviceName.map((service) => (
           <div className="flex_col_mid gap-5 min-h-[400px] md:min-h-[600px] min-w-full bg-black" key={service.id}>
             <Image src={service.img} alt={service.name} className="h-16 w-16 md:w-24 md:h-24" />
@@ -82,7 +82,7 @@ const SlideShow = () => {
       <div className="absolute bottom-5 left-0 right-0 mx-auto">
             <div className="flex_row_mid gap-3">
                 {serviceName.map((_, i) => (
-                    <div className={`w-2 h-2 md:w-3 md:h-3 rounded-full bg-white ${(current === i) ? "w-3 h-3 md:w-4 md:h-4" : "opacity-30"}`}></div>
+                    <div key={null} className={`w-2 h-2 md:w-3 md:h-3 rounded-full bg-white ${(current === i) ? "w-3 h-3 md:w-4 md:h-4" : "opacity-30"}`}></div>
                 ))}
             </div>
       </div>
