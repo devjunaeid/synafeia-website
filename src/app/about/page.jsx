@@ -42,6 +42,7 @@ const About = () => {
         <div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full rounded-b-2xl bg-black/30 backdrop-blur-sm overflow-hidden"></div>
         <Image
           src={aboutHeroImg}
+          alt="About hero background"
           className="w-full h-full object-cover rounded-b-2xl"
         />
         <div className="absolute top-[50%] left-0 right-0 text-center transform -translate-y-[50%] flex_col_mid md:bottom-[30] md:transform-none">
