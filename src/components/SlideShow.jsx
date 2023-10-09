@@ -54,7 +54,7 @@ const SlideShow = () => {
     if(!autoSlide) return;
     const interval = setInterval(nextSlide, slideInterval);
     return () => clearInterval(interval);
-  }, [current])
+  }, [current, autoSlide, nextSlide])
   
 
   return (
