@@ -70,11 +70,13 @@ const SlideShow = () => {
       <div className="absolute inset-0 flex justify-between items-center px-3 md:px-16">
         <Image
           src={arrowL}
+          alt=" "
           className="w-8 h-8 md:w-16 md:h-16 p-2 md:p-5 bg-gray-100/10 rounded-md cursor-pointer hover:scale-125"
           onClick={preSlide}
         />
         <Image
           src={arrowR}
+          alt=" "
           className="w-8 h-8 md:w-16 md:h-16 p-2 md:p-5 bg-gray-100/10 rounded-md cursor-pointer hover:scale-125"
           onClick={nextSlide}
         />
