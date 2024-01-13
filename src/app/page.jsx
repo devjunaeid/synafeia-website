@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <div className="flex_col_mid items-center h-full">
       <div
-        className="relative w-screen min-h-[600px] bg-cover md:w-full md:h-screen bg-center bg-no-repeat"
+        className="relative w-screen min-h-screen bg-cover md:w-full md:h-screen bg-center bg-no-repeat"
         style={{ backgroundImage: `url('${hero.src}')` }}
       >
         <div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full rounded-b-2xl bg-black/30 backdrop-blur-sm overflow-hidden"></div>
