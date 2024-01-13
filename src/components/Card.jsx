@@ -7,10 +7,10 @@ const Card = ({ title, desc, img, width, height }) => {
       style={{ backgroundImage: `url('${img.src}')` }}
     >
       <div className="w-full h-full bg-black/40 hover:bg-black/70 backdrop-blur-[2px] hover:backdrop-blur-[4px] rounded-lg p-6">
-        <h5 class="mb-2 text-xl md:text-2xl font-medium leading-tight text-white">
+        <h5 className="mb-2 text-xl md:text-2xl font-medium leading-tight text-white">
           {title}
         </h5>
-        <p class="mb-4 text-base md:text-xl text-white">
+        <p className="mb-4 text-base md:text-xl text-white">
           {desc}
         </p>
       </div>

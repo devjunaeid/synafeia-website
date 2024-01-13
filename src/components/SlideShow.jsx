@@ -58,7 +58,7 @@ const SlideShow = () => {
   
 
   return (
-    <div className="overflow-hidden relative w-[350px] md:w-full mb-20 mx-10">
+    <div className="overflow-hidden relative w-[350px] md:w-2/3 mb-20 mx-10">
       <div className={`flex transition-transform ease-out duration-700 delay-100"}`}style={{transform: `translateX(-${current * 100}%)`}}>
         {serviceName.map((service) => (
           <div className="flex_col_mid gap-5 min-h-[400px] md:min-h-[600px] min-w-full bg-black" key={service.id}>
