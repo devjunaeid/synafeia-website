@@ -51,7 +51,7 @@ const ContactUs = () => {
           <p className="hidden md:flex font-light text-left text-white sm:text-xl">
             Gazipur, Dhaka, Bangladesh <br />
             +88 01521 774818 <br />
-            synafeia.tech@gmail.com
+            help@synafeia.com
           </p>
         </div>
         <div className="py-4 lg:py-16 px-4 mx-auto w-full md:min-w-fit">
