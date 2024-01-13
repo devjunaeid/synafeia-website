@@ -42,14 +42,14 @@ const Navbar = () => {
     settoggle(!toggle);
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     settoggle(false);
-  },[]);
+  }, []);
 
   console.log(toggle);
 
   return (
-    <nav className="flex_just_between min-w-full py-5 h-28 sticky top-0 bg-black/80 px-5 md:px-20 lg:px-40 z-30">
+    <nav className="fixed w-full left-[50%] translate-x-[-50%] right-0 top-0 z-50 flex flex-nowrap justify-between items-center content-center px-5 py-5 h-27 md:w-[83%] md:px-10 md:rounded-b-lg bg-black/80">
       <Link href="/" className="flex_row_mid">
         <Image
           src={logo}
@@ -63,7 +63,11 @@ const Navbar = () => {
 
       <div className="hidden gap-3 md:flex">
         {links.map((link) => (
-          <Link className={(pathname === link.url) ? "activeNav" : "nonActiveNav"} key={link.id} href={link.url}>
+          <Link
+            className={pathname === link.url ? "activeNav" : "nonActiveNav"}
+            key={link.id}
+            href={link.url}
+          >
             {link.title}
           </Link>
         ))}
